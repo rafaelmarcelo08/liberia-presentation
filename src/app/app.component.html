@@ -1,15 +1,13 @@
 <!-- app.component.html -->
-<div
-  class="h-screen w-full overflow-y-scroll scroll-smooth snap-y snap-mandatory"
->
-  <!-- Slide 1: Introdução -->
+<div class="h-screen w-full overflow-auto scroll-smooth snap-y snap-mandatory">
+  <!-- Slide 1: Grupo -->
   <section
     class="h-screen snap-start relative bg-cover bg-center"
     style="background-image: url('assets/images/travel.jpg')"
   >
     <div class="absolute inset-0 bg-black bg-opacity-40"></div>
     <div
-      class="relative z-10 flex flex-col justify-center items-center h-full text-white px-6 text-center animate-fade-in"
+      class="relative z-10 flex flex-col justify-center items-center min-h-screen text-white px-6 text-center animate-fade-in"
     >
       <p class="text-md sm:text-lg font-medium text-white/80 mb-2">Group 1:</p>
       <h1 class="text-4xl sm:text-5xl font-bold mb-6 animate-fade-up">
@@ -24,175 +22,187 @@
     </div>
   </section>
 
-  <!-- Slide 2: Onde fica a Libéria -->
+  <!-- Slide 2: Introdução -->
   <section
-    class="h-screen snap-start flex flex-col justify-center items-center bg-white px-6 text-center"
+    class="h-screen snap-start bg-white px-6 text-center flex items-center justify-center"
   >
-    <div class="animate-fade-up max-w-3xl">
+    <div class="max-w-3xl animate-fade-up">
       <h2 class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4">
-        Where is Liberia?
+        What will we talk about?
       </h2>
-      <p class="text-lg sm:text-xl text-gray-700 mb-6">
-        Liberia is located in West Africa, along the Atlantic Ocean.
+      <p class="text-lg sm:text-xl text-gray-700 mb-4">
+        We’ll explore when and why it’s best to visit Liberia based on climate,
+        tourism, culture, and accessibility.
       </p>
       <img
         src="assets/images/travel.jpg"
-        alt="Map of Liberia"
-        class="w-full max-w-md rounded-lg shadow-xl"
+        class="rounded-xl shadow-xl max-w-md mx-auto"
+        alt="Intro Image"
       />
     </div>
   </section>
 
-  <!-- Slide 3: Curiosidades -->
+  <!-- Slide 3: Estações -->
   <section
-    class="h-screen snap-start bg-gray-100 px-6 text-center flex flex-col justify-center items-center"
+    class="h-screen snap-start bg-gray-100 px-6 text-center flex items-center justify-center"
   >
-    <div class="animate-zoom-in max-w-xl">
-      <h2 class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4">
-        Did you know?
-      </h2>
-      <ul
-        class="text-lg sm:text-xl text-gray-800 space-y-3 text-left list-disc list-inside"
-      >
-        <li>Liberia was founded by freed American slaves.</li>
-        <li>The flag is similar to the USA's flag.</li>
-        <li>The official language is English.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Slide 4: Estações do ano -->
-  <section
-    class="h-screen snap-start bg-white px-6 text-center flex flex-col justify-center items-center"
-  >
-    <div class="animate-fade-up max-w-3xl">
+    <div class="max-w-3xl animate-slide-in-left">
       <h2 class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4">
         Seasons in Liberia
       </h2>
-      <p class="text-lg sm:text-xl text-gray-700 mb-2">
-        <strong>Rainy Season:</strong> May – October
-      </p>
-      <p class="text-lg sm:text-xl text-gray-700 mb-6">
-        <strong>Dry Season:</strong> November – April
-      </p>
+      <p class="text-lg text-gray-800 mb-2">☔ Rainy Season: May to October</p>
+      <p class="text-lg text-gray-800 mb-6">☀️ Dry Season: November to April</p>
       <img
         src="assets/images/travel.jpg"
+        class="rounded-lg shadow-lg max-w-md mx-auto"
         alt="Seasons"
-        class="w-full max-w-md rounded-lg shadow-xl"
       />
     </div>
   </section>
 
-  <!-- Slide 5: Melhor época -->
+  <!-- Slide 4: Melhor época -->
   <section
-    class="h-screen snap-start bg-gray-100 px-6 text-center flex flex-col justify-center items-center"
+    class="h-screen snap-start bg-white px-6 text-center flex items-center justify-center"
   >
-    <div class="animate-slide-left max-w-3xl">
+    <div class="max-w-2xl animate-zoom-in">
       <h2 class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4">
         Best Time to Visit
       </h2>
-      <p class="text-lg sm:text-xl text-gray-700 mb-6">
-        December to March is perfect for travel, thanks to the sunny dry season.
+      <p class="text-lg text-gray-700 mb-4">
+        December to March offers sunny days and excellent weather for beaches,
+        hiking, and festivals.
       </p>
       <img
         src="assets/images/travel.jpg"
+        class="rounded-lg shadow-lg max-w-md mx-auto"
         alt="Best Time"
-        class="w-full max-w-md rounded-lg shadow-xl"
       />
+    </div>
+  </section>
+
+  <!-- Slide 5: Eventos sazonais -->
+  <section
+    class="h-screen snap-start bg-fixed bg-center bg-cover relative"
+    style="background-image: url('assets/images/travel.jpg')"
+  >
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div
+      class="relative z-10 text-white text-center px-6 flex flex-col items-center justify-center min-h-screen animate-fade-up"
+    >
+      <h2 class="text-3xl sm:text-4xl font-semibold mb-4">Seasonal Events</h2>
+      <p class="text-lg sm:text-xl max-w-xl">
+        🎄 Christmas in Liberia means family, music, traditional food, and
+        street celebrations.
+      </p>
     </div>
   </section>
 
   <!-- Slide 6: Turismo -->
   <section
-    class="h-screen snap-start relative bg-fixed bg-center bg-cover"
-    style="background-image: url('assets/images/travel.jpg')"
+    class="h-screen snap-start bg-white px-6 text-center flex items-center justify-center"
   >
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-    <div
-      class="relative z-10 flex flex-col justify-center items-center h-full text-white px-6 text-center animate-fade-up"
-    >
-      <h2 class="text-3xl sm:text-4xl font-semibold mb-4">
-        Tourism Highlights
+    <div class="max-w-3xl animate-fade-up">
+      <h2 class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4">
+        Tourist Activities
       </h2>
-      <p class="text-lg sm:text-xl max-w-2xl">
-        Visit golden beaches, explore nature reserves, and enjoy outdoor
-        adventures in Liberia.
+      <p class="text-lg sm:text-xl text-gray-700 mb-4">
+        Enjoy beaches, national parks, waterfalls, and warm hospitality.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <img
+          src="assets/images/travel.jpg"
+          class="rounded-xl shadow-lg"
+          alt="Beach"
+        />
+        <img
+          src="assets/images/travel.jpg"
+          class="rounded-xl shadow-lg"
+          alt="Nature"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide 7: Acesso -->
+  <section
+    class="h-screen snap-start bg-gray-100 px-6 text-center flex items-center justify-center"
+  >
+    <div class="max-w-xl animate-slide-in-left">
+      <h2 class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4">
+        Travel Conditions
+      </h2>
+      <p class="text-lg sm:text-xl text-gray-700">
+        Roads and airports are more accessible in the dry season, making travel
+        easier and safer.
       </p>
     </div>
   </section>
 
-  <!-- Slide 7: Cultura -->
+  <!-- Slide 8: Hospedagem -->
   <section
-    class="h-screen snap-start flex flex-col justify-center items-center bg-white px-6 text-center"
+    class="h-screen snap-start bg-white px-6 text-center flex items-center justify-center"
   >
-    <div class="animate-fade-up max-w-3xl">
+    <div class="max-w-xl animate-fade-up">
       <h2 class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4">
-        Liberian Culture
+        Hotels and Tourism
       </h2>
-      <p class="text-lg sm:text-xl text-gray-700 mb-6">
-        Music and dance are essential to everyday life, especially during
-        celebrations and festivals.
+      <p class="text-lg sm:text-xl text-gray-700">
+        More hotels and tours are available between December and March.
       </p>
       <img
         src="assets/images/travel.jpg"
-        alt="Culture"
-        class="w-full max-w-md rounded-lg shadow-xl"
+        class="rounded-lg shadow-md max-w-md mx-auto mt-4"
+        alt="Hotel"
       />
     </div>
   </section>
 
-  <!-- Slide 8: Festas de Dezembro -->
+  <!-- Slide 9: Alta temporada -->
   <section
-    class="h-screen snap-start relative bg-fixed bg-center bg-cover"
-    style="background-image: url('assets/images/travel.jpg')"
+    class="h-screen snap-start bg-gray-100 px-6 text-center flex items-center justify-center"
   >
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-    <div
-      class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-6 animate-zoom-in"
-    >
-      <h2 class="text-3xl sm:text-4xl font-semibold mb-4">
-        December Celebrations
+    <div class="max-w-xl animate-zoom-in">
+      <h2 class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4">
+        Tourist Flow
       </h2>
-      <p class="text-lg sm:text-xl max-w-xl">
-        Christmas in Liberia means colorful clothes, big family gatherings, and
-        joyful music in the streets!
+      <p class="text-lg sm:text-xl text-gray-700">
+        Expect more tourists during holidays and festivals, especially in high
+        season.
       </p>
     </div>
   </section>
 
-  <!-- Slide 9: Comida típica -->
+  <!-- Slide 10: Temperatura -->
   <section
-    class="h-screen snap-start flex flex-col justify-center items-center bg-white px-6 text-center"
+    class="h-screen snap-start bg-white px-6 text-center flex items-center justify-center"
   >
-    <div class="animate-fade-up max-w-3xl">
+    <div class="max-w-xl animate-fade-up">
       <h2 class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4">
-        Food & Hospitality
+        Average Temperature
       </h2>
-      <p class="text-lg sm:text-xl text-gray-700 mb-6">
-        Try jollof rice, cassava, and fresh seafood — and experience the warm
-        Liberian welcome.
+      <p class="text-lg sm:text-xl text-gray-700">
+        Liberia is hot and tropical year-round, but the dry season is less
+        humid.
       </p>
       <img
         src="assets/images/travel.jpg"
-        alt="Food"
-        class="w-full max-w-md rounded-lg shadow-xl"
+        class="rounded-xl shadow-lg max-w-md mx-auto mt-4"
+        alt="Temperature"
       />
     </div>
   </section>
 
-  <!-- Slide 10: Agradecimento -->
+  <!-- Slide 11: Encerramento -->
   <section
     class="h-screen snap-start relative bg-cover bg-center"
     style="background-image: url('assets/images/travel.jpg')"
   >
     <div class="absolute inset-0 bg-black bg-opacity-60"></div>
     <div
-      class="relative z-10 flex flex-col justify-center items-center h-full text-white px-6 text-center animate-fade-in"
+      class="relative z-10 flex flex-col justify-center items-center min-h-screen text-white px-6 text-center animate-fade-in"
     >
       <h2 class="text-4xl sm:text-5xl font-bold mb-4">Thank you!</h2>
-      <p class="text-lg sm:text-xl">
-        We hope you enjoyed learning about Liberia. 🌍
-      </p>
+      <p class="text-lg sm:text-xl">We hope you enjoyed our presentation. 🌍</p>
     </div>
   </section>
 </div>
