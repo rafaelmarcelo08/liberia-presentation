@@ -10,7 +10,7 @@
       class="relative z-10 flex flex-col justify-center items-center min-h-screen text-white px-6 text-center animate-fade-in"
     >
       <p class="text-md sm:text-lg font-medium text-white/80 mb-2">Group 1:</p>
-      <h1 class="text-4xl sm:text-5xl font-bold mb-6 animate-fade-up">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-6 animate-rise-in">
         What time of year should you go to Liberia?
       </h1>
       <ul class="list-disc list-inside text-lg sm:text-xl text-left space-y-1">
@@ -36,8 +36,8 @@
       </p>
       <img
         src="assets/images/travel.jpg"
-        class="rounded-xl shadow-xl max-w-md mx-auto"
-        alt="Intro Image"
+        class="rounded-xl shadow-xl max-w-md mx-auto animate-zoom-in"
+        alt="Intro"
       />
     </div>
   </section>
@@ -54,7 +54,7 @@
       <p class="text-lg text-gray-800 mb-6">☀️ Dry Season: November to April</p>
       <img
         src="assets/images/travel.jpg"
-        class="rounded-lg shadow-lg max-w-md mx-auto"
+        class="rounded-lg shadow-lg max-w-md mx-auto animate-scale-in"
         alt="Seasons"
       />
     </div>
@@ -74,7 +74,7 @@
       </p>
       <img
         src="assets/images/travel.jpg"
-        class="rounded-lg shadow-lg max-w-md mx-auto"
+        class="rounded-lg shadow-lg max-w-md mx-auto animate-flip-in"
         alt="Best Time"
       />
     </div>
@@ -82,15 +82,18 @@
 
   <!-- Slide 5: Eventos sazonais -->
   <section
-    class="h-screen snap-start bg-fixed bg-center bg-cover relative"
+    class="h-screen snap-start relative bg-fixed bg-center bg-cover flex flex-col items-center justify-center text-center px-6"
     style="background-image: url('assets/images/travel.jpg')"
   >
-    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-    <div
-      class="relative z-10 text-white text-center px-6 flex flex-col items-center justify-center min-h-screen animate-fade-up"
-    >
-      <h2 class="text-3xl sm:text-4xl font-semibold mb-4">Seasonal Events</h2>
-      <p class="text-lg sm:text-xl max-w-xl">
+    <!-- Overlay mais escuro -->
+    <div class="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-sm"></div>
+
+    <!-- Conteúdo acima da imagem -->
+    <div class="relative z-10 text-white animate-fade-in">
+      <h2 class="text-3xl sm:text-4xl font-semibold mb-4 drop-shadow-md">
+        Seasonal Events
+      </h2>
+      <p class="text-lg sm:text-xl max-w-xl drop-shadow-md">
         🎄 Christmas in Liberia means family, music, traditional food, and
         street celebrations.
       </p>
@@ -101,23 +104,30 @@
   <section
     class="h-screen snap-start bg-white px-6 text-center flex items-center justify-center"
   >
-    <div class="max-w-3xl animate-fade-up">
-      <h2 class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4">
+    <div class="max-w-3xl">
+      <h2
+        class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4 animate-slide-in-left"
+      >
         Tourist Activities
       </h2>
-      <p class="text-lg sm:text-xl text-gray-700 mb-4">
-        Enjoy beaches, national parks, waterfalls, and warm hospitality.
+      <p class="text-lg sm:text-xl text-gray-700 mb-4 animate-fade-up">
+        Liberia offers beaches, hiking trails, waterfalls and wildlife!
       </p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
         <img
           src="assets/images/travel.jpg"
-          class="rounded-xl shadow-lg"
+          class="rounded-lg shadow-lg animate-flip-in"
           alt="Beach"
         />
         <img
           src="assets/images/travel.jpg"
-          class="rounded-xl shadow-lg"
-          alt="Nature"
+          class="rounded-lg shadow-lg animate-zoom-in"
+          alt="Trail"
+        />
+        <img
+          src="assets/images/travel.jpg"
+          class="rounded-lg shadow-lg animate-fade-in"
+          alt="Waterfall"
         />
       </div>
     </div>
@@ -127,7 +137,7 @@
   <section
     class="h-screen snap-start bg-gray-100 px-6 text-center flex items-center justify-center"
   >
-    <div class="max-w-xl animate-slide-in-left">
+    <div class="max-w-xl animate-rise-in">
       <h2 class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4">
         Travel Conditions
       </h2>
@@ -135,6 +145,11 @@
         Roads and airports are more accessible in the dry season, making travel
         easier and safer.
       </p>
+      <img
+        src="assets/images/travel.jpg"
+        class="rounded-xl shadow-md max-w-md mx-auto mt-6 animate-fade-up"
+        alt="Accessibility"
+      />
     </div>
   </section>
 
@@ -142,18 +157,25 @@
   <section
     class="h-screen snap-start bg-white px-6 text-center flex items-center justify-center"
   >
-    <div class="max-w-xl animate-fade-up">
+    <div class="max-w-xl animate-flip-in">
       <h2 class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4">
         Hotels and Tourism
       </h2>
       <p class="text-lg sm:text-xl text-gray-700">
-        More hotels and tours are available between December and March.
+        More hotels and guided tours are available between December and March.
       </p>
-      <img
-        src="assets/images/travel.jpg"
-        class="rounded-lg shadow-md max-w-md mx-auto mt-4"
-        alt="Hotel"
-      />
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+        <img
+          src="assets/images/travel.jpg"
+          class="rounded-lg shadow-lg animate-zoom-in"
+          alt="Hotel 1"
+        />
+        <img
+          src="assets/images/travel.jpg"
+          class="rounded-lg shadow-lg animate-slide-in-left"
+          alt="Hotel 2"
+        />
+      </div>
     </div>
   </section>
 
@@ -161,14 +183,19 @@
   <section
     class="h-screen snap-start bg-gray-100 px-6 text-center flex items-center justify-center"
   >
-    <div class="max-w-xl animate-zoom-in">
+    <div class="max-w-xl animate-scale-in">
       <h2 class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4">
         Tourist Flow
       </h2>
-      <p class="text-lg sm:text-xl text-gray-700">
-        Expect more tourists during holidays and festivals, especially in high
-        season.
+      <p class="text-lg sm:text-xl text-gray-700 mb-4">
+        Tourist numbers increase around Christmas and holidays — expect vibrant
+        streets and busy beaches.
       </p>
+      <img
+        src="assets/images/travel.jpg"
+        class="rounded-xl shadow-md max-w-md mx-auto animate-fade-in"
+        alt="Crowd"
+      />
     </div>
   </section>
 
@@ -176,23 +203,30 @@
   <section
     class="h-screen snap-start bg-white px-6 text-center flex items-center justify-center"
   >
-    <div class="max-w-xl animate-fade-up">
+    <div class="max-w-xl animate-fade-in">
       <h2 class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4">
         Average Temperature
       </h2>
       <p class="text-lg sm:text-xl text-gray-700">
-        Liberia is hot and tropical year-round, but the dry season is less
-        humid.
+        Liberia is hot and tropical year-round, but during the dry season, the
+        air is less humid and more pleasant.
       </p>
-      <img
-        src="assets/images/travel.jpg"
-        class="rounded-xl shadow-lg max-w-md mx-auto mt-4"
-        alt="Temperature"
-      />
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+        <img
+          src="assets/images/travel.jpg"
+          class="rounded-lg shadow-lg animate-rise-in"
+          alt="Sun"
+        />
+        <img
+          src="assets/images/travel.jpg"
+          class="rounded-lg shadow-lg animate-pulse-in"
+          alt="Thermometer"
+        />
+      </div>
     </div>
   </section>
 
-  <!-- Slide 11: Encerramento -->
+  <!-- Slide 11: Agradecimento -->
   <section
     class="h-screen snap-start relative bg-cover bg-center"
     style="background-image: url('assets/images/travel.jpg')"
