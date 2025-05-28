@@ -102,41 +102,63 @@
     class="h-screen snap-start bg-gray-100 px-6 text-center flex items-center justify-center"
   >
     <div
-      class="max-w-4xl w-full"
+      class="max-w-5xl w-full"
       [ngClass]="{ 'animate-slide-in-left': activeSlide === 2 }"
     >
       <h2
-        class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4"
+        class="text-4xl sm:text-5xl font-semibold text-blue-800 mb-6"
         [ngClass]="{ 'animate-slide-in-left': activeSlide === 2 }"
       >
         Seasons in Liberia
       </h2>
+
       <p
-        class="text-lg text-gray-800"
+        class="text-xl sm:text-2xl text-gray-800 mb-2"
         [ngClass]="{ 'animate-fade-in': activeSlide === 2 }"
       >
         ☔ Rainy Season: May to October
       </p>
       <p
-        class="text-lg text-gray-800 mb-6"
+        class="text-xl sm:text-2xl text-gray-800 mb-8"
         [ngClass]="{ 'animate-fade-in': activeSlide === 2 }"
       >
         ☀️ Dry Season: November to April
       </p>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6 items-center">
-        <img
-          src="assets/images/travel.jpg"
-          class="rounded-lg shadow-lg w-full"
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+        <!-- Imagem 1 - Estação seca -->
+        <div
+          class="relative rounded-lg shadow-lg w-full h-[300px] overflow-hidden"
           [ngClass]="{ 'animate-scale-in': activeSlide === 2 }"
-          alt="Rainy"
-        />
-        <img
-          src="assets/images/travel.jpg"
-          class="rounded-lg shadow-lg w-full"
+        >
+          <img
+            src="assets/images/sol.jpg"
+            class="w-full h-full object-cover"
+            alt="Dry Season"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2 text-sm sm:text-base font-medium"
+          >
+            ☀️ Dry Season – Clear skies and sandy beaches, great for travel
+          </div>
+        </div>
+
+        <!-- Imagem 2 - Estação chuvosa -->
+        <div
+          class="relative rounded-lg shadow-lg w-full h-[300px] overflow-hidden"
           [ngClass]="{ 'animate-fade-up': activeSlide === 2 }"
-          alt="Dry"
-        />
+        >
+          <img
+            src="assets/images/liberia_chuva.jpg"
+            class="w-full h-full object-cover"
+            alt="Rainy Season"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2 text-sm sm:text-base font-medium"
+          >
+            🌧️ Rainy Season – Lush vegetation and frequent tropical storms
+          </div>
+        </div>
       </div>
     </div>
   </section>
