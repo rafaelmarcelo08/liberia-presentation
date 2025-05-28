@@ -583,7 +583,7 @@
     </div>
   </section>
 
-  <!-- Slide 10: Temperatura -->
+  <!-- Slide 10: Average Temperature -->
   <section
     class="h-screen snap-start bg-white px-6 text-center flex flex-col items-center justify-center"
   >
@@ -592,40 +592,71 @@
       [ngClass]="{ 'animate-fade-in': activeSlide === 9 }"
     >
       <h2
-        class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4"
+        class="text-4xl sm:text-5xl font-semibold text-blue-800 mb-6"
         [ngClass]="{ 'animate-slide-in-left': activeSlide === 9 }"
       >
         Average Temperature
       </h2>
+
       <p
-        class="text-lg sm:text-xl text-gray-700 max-w-2xl mb-6"
+        class="text-xl sm:text-2xl text-gray-700 max-w-3xl mx-auto mb-8"
         [ngClass]="{ 'animate-fade-up': activeSlide === 9 }"
       >
         Liberia is hot and tropical year-round, but during the dry season, the
         air is less humid and more pleasant.
       </p>
 
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full"
-      >
-        <img
-          src="assets/images/travel.jpg"
-          class="rounded-lg shadow-lg w-full"
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+        <!-- Imagem 1 -->
+        <div
+          class="relative rounded-lg shadow-lg w-full h-[300px] overflow-hidden"
           [ngClass]="{ 'animate-rise-in': activeSlide === 9 }"
-          alt="Sun"
-        />
-        <img
-          src="assets/images/travel.jpg"
-          class="rounded-lg shadow-lg w-full"
+        >
+          <img
+            src="assets/images/1.jpg"
+            alt="Tropical beach view"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2 text-sm sm:text-base font-medium"
+          >
+            🌴 Liberia's coastline reflects its tropical heat and humidity
+          </div>
+        </div>
+
+        <!-- Imagem 2 -->
+        <div
+          class="relative rounded-lg shadow-lg w-full h-[300px] overflow-hidden"
           [ngClass]="{ 'animate-zoom-in': activeSlide === 9 }"
-          alt="Tropical Weather"
-        />
-        <img
-          src="assets/images/travel.jpg"
-          class="rounded-lg shadow-lg w-full"
+        >
+          <img
+            src="assets/images/2.jpg"
+            alt="Blue skies and warm water"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2 text-sm sm:text-base font-medium"
+          >
+            🌞 Clear skies and high temperatures are common all year
+          </div>
+        </div>
+
+        <!-- Imagem 3 -->
+        <div
+          class="relative rounded-lg shadow-lg w-full h-[300px] overflow-hidden"
           [ngClass]="{ 'animate-slide-in-left': activeSlide === 9 }"
-          alt="Heat Icon"
-        />
+        >
+          <img
+            src="assets/images/3.jpg"
+            alt="African heat at sunset"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2 text-sm sm:text-base font-medium"
+          >
+            🔥 Dry season sunsets highlight the intense African warmth
+          </div>
+        </div>
       </div>
     </div>
   </section>
