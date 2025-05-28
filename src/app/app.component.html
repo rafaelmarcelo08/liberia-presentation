@@ -510,71 +510,75 @@
     class="h-screen snap-start bg-white px-6 text-center flex flex-col items-center justify-center"
   >
     <div
-      class="max-w-6xl w-full flex flex-col items-center text-center animate-fade-in"
+      class="max-w-6xl w-full flex flex-col items-center text-center"
+      [ngClass]="{ 'animate-flip-in': activeSlide === 8 }"
     >
-      <h2 class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-2">
+      <h2
+        class="text-4xl sm:text-5xl font-semibold text-blue-800 mb-6"
+        [ngClass]="{ 'animate-slide-in-left': activeSlide === 8 }"
+      >
         Tourist Flow
       </h2>
-      <p class="text-lg sm:text-xl text-gray-700 max-w-3xl mb-8">
+
+      <p
+        class="text-xl sm:text-2xl text-gray-700 max-w-3xl mx-auto mb-8"
+        [ngClass]="{ 'animate-fade-up': activeSlide === 8 }"
+      >
         Tourist numbers increase around Christmas and holidays — expect vibrant
         streets and busy beaches.
       </p>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-        <!-- Card 1: Airport -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full">
+        <!-- Imagem 1: Aeroporto -->
         <div
-          class="rounded-xl overflow-hidden shadow-md bg-gray-900 relative group"
+          class="relative rounded-lg shadow-lg w-full h-[300px] overflow-hidden"
+          [ngClass]="{ 'animate-zoom-in': activeSlide === 8 }"
         >
           <img
             src="assets/images/flow.jpg"
             alt="Tourists waiting at airport"
-            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            class="w-full h-full object-cover"
           />
           <div
-            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white text-sm p-4"
+            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2 text-sm sm:text-base font-medium"
           >
-            <span class="flex items-center gap-1"
-              >✈️ Tourists wait for flights during the busy holiday
-              season.</span
-            >
+            ✈️ Tourists wait for flights during the busy holiday season.
           </div>
         </div>
 
-        <!-- Card 2: Plane on runway -->
+        <!-- Imagem 2: Avião na pista -->
         <div
-          class="rounded-xl overflow-hidden shadow-md bg-gray-900 relative group"
+          class="relative rounded-lg shadow-lg w-full h-[300px] overflow-hidden"
+          [ngClass]="{ 'animate-slide-in-left': activeSlide === 8 }"
         >
           <img
             src="assets/images/moro.jpg"
             alt="Plane on runway"
-            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            class="w-full h-full object-cover"
           />
           <div
-            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white text-sm p-4"
+            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2 text-sm sm:text-base font-medium"
           >
-            <span class="flex items-center gap-1"
-              >🛬 Increased flights connect Monrovia to international
-              destinations during holidays.</span
-            >
+            🛬 Increased flights connect Monrovia to international destinations
+            during holidays.
           </div>
         </div>
 
-        <!-- Card 3: Monrovia street -->
+        <!-- Imagem 3: Rua em Monrovia -->
         <div
-          class="rounded-xl overflow-hidden shadow-md bg-gray-900 relative group"
+          class="relative rounded-lg shadow-lg w-full h-[300px] overflow-hidden"
+          [ngClass]="{ 'animate-fade-in': activeSlide === 8 }"
         >
           <img
             src="assets/images/flow2.jpg"
             alt="Street in Monrovia"
-            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            class="w-full h-full object-cover"
           />
           <div
-            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white text-sm p-4"
+            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2 text-sm sm:text-base font-medium"
           >
-            <span class="flex items-center gap-1"
-              >🌆 Monrovia's streets fill with life and color during the festive
-              season.</span
-            >
+            🌆 Monrovia's streets fill with life and color during the festive
+            season.
           </div>
         </div>
       </div>
