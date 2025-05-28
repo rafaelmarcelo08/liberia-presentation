@@ -507,76 +507,74 @@
 
   <!-- Slide 9: Tourist Flow -->
   <section
-    class="h-screen snap-start bg-gray-100 px-6 text-center flex flex-col items-center justify-center"
+    class="h-screen snap-start bg-white px-6 text-center flex flex-col items-center justify-center"
   >
     <div
-      class="max-w-6xl w-full flex flex-col items-center text-center"
-      [ngClass]="{ 'animate-scale-in': activeSlide === 8 }"
+      class="max-w-6xl w-full flex flex-col items-center text-center animate-fade-in"
     >
-      <h2
-        class="text-4xl sm:text-5xl font-semibold text-blue-800 mb-6"
-        [ngClass]="{ 'animate-fade-in': activeSlide === 8 }"
-      >
+      <h2 class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-2">
         Tourist Flow
       </h2>
-
-      <p
-        class="text-xl sm:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto"
-        [ngClass]="{ 'animate-fade-up': activeSlide === 8 }"
-      >
+      <p class="text-lg sm:text-xl text-gray-700 max-w-3xl mb-8">
         Tourist numbers increase around Christmas and holidays — expect vibrant
         streets and busy beaches.
       </p>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full">
-        <!-- Imagem 1: Praia cheia -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+        <!-- Card 1: Airport -->
         <div
-          class="relative rounded-xl shadow-md w-full h-[300px] overflow-hidden"
-          [ngClass]="{ 'animate-fade-in': activeSlide === 8 }"
+          class="rounded-xl overflow-hidden shadow-md bg-gray-900 relative group"
         >
           <img
             src="assets/images/flow.jpg"
-            class="w-full h-full object-cover"
-            alt="Beach Crowd"
+            alt="Tourists waiting at airport"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <div
-            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2 text-sm sm:text-base font-medium"
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white text-sm p-4"
           >
-            🏖️ Popular beaches attract many tourists in the dry season
+            <span class="flex items-center gap-1"
+              >✈️ Tourists wait for flights during the busy holiday
+              season.</span
+            >
           </div>
         </div>
 
-        <!-- Imagem 2: Ruas de Monróvia -->
+        <!-- Card 2: Plane on runway -->
         <div
-          class="relative rounded-xl shadow-md w-full h-[300px] overflow-hidden"
-          [ngClass]="{ 'animate-slide-in-left': activeSlide === 8 }"
+          class="rounded-xl overflow-hidden shadow-md bg-gray-900 relative group"
         >
           <img
             src="assets/images/moro.jpg"
-            class="w-full h-full object-cover"
-            alt="City Streets"
+            alt="Plane on runway"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <div
-            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2 text-sm sm:text-base font-medium"
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white text-sm p-4"
           >
-            🚶 Vibrant streets and markets in Monrovia during holidays
+            <span class="flex items-center gap-1"
+              >🛬 Increased flights connect Monrovia to international
+              destinations during holidays.</span
+            >
           </div>
         </div>
 
-        <!-- Imagem 3: Área turística -->
+        <!-- Card 3: Monrovia street -->
         <div
-          class="relative rounded-xl shadow-md w-full h-[300px] overflow-hidden"
-          [ngClass]="{ 'animate-flip-in': activeSlide === 8 }"
+          class="rounded-xl overflow-hidden shadow-md bg-gray-900 relative group"
         >
           <img
             src="assets/images/flow2.jpg"
-            class="w-full h-full object-cover"
-            alt="Tourist Area"
+            alt="Street in Monrovia"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <div
-            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2 text-sm sm:text-base font-medium"
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white text-sm p-4"
           >
-            📸 Tourist hotspots fill with energy and activity
+            <span class="flex items-center gap-1"
+              >🌆 Monrovia's streets fill with life and color during the festive
+              season.</span
+            >
           </div>
         </div>
       </div>
