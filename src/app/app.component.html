@@ -428,7 +428,7 @@
     </div>
   </section>
 
-  <!-- Slide 8: Hospedagem -->
+  <!-- Slide 8: Hotels and Tourism -->
   <section
     class="h-screen snap-start bg-white px-6 text-center flex flex-col items-center justify-center"
   >
@@ -437,37 +437,70 @@
       [ngClass]="{ 'animate-flip-in': activeSlide === 7 }"
     >
       <h2
-        class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4"
+        class="text-4xl sm:text-5xl font-semibold text-blue-800 mb-6"
         [ngClass]="{ 'animate-slide-in-left': activeSlide === 7 }"
       >
         Hotels and Tourism
       </h2>
+
       <p
-        class="text-lg sm:text-xl text-gray-700 max-w-2xl mb-6"
+        class="text-xl sm:text-2xl text-gray-700 max-w-3xl mx-auto mb-8"
         [ngClass]="{ 'animate-fade-up': activeSlide === 7 }"
       >
         More hotels and guided tours are available between December and March.
       </p>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full">
-        <img
-          src="assets/images/travel.jpg"
-          class="rounded-lg shadow-lg w-full"
+        <!-- Imagem 1: Hotel -->
+        <div
+          class="relative rounded-lg shadow-lg w-full h-[300px] overflow-hidden"
           [ngClass]="{ 'animate-zoom-in': activeSlide === 7 }"
-          alt="Hotel 1"
-        />
-        <img
-          src="assets/images/travel.jpg"
-          class="rounded-lg shadow-lg w-full"
+        >
+          <img
+            src="assets/images/hotel.jpg"
+            alt="Resort in Liberia"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2 text-sm sm:text-base font-medium"
+          >
+            🏨 Beachfront resorts in Liberia offer comfort and ocean views
+          </div>
+        </div>
+
+        <!-- Imagem 2: Guia turístico -->
+        <div
+          class="relative rounded-lg shadow-lg w-full h-[300px] overflow-hidden"
           [ngClass]="{ 'animate-slide-in-left': activeSlide === 7 }"
-          alt="Hotel 2"
-        />
-        <img
-          src="assets/images/travel.jpg"
-          class="rounded-lg shadow-lg w-full"
+        >
+          <img
+            src="assets/images/guide.jpg"
+            alt="Tourist Guide"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2 text-sm sm:text-base font-medium"
+          >
+            🧭 Guided tours showcase Liberia’s nature, food, and coastal towns
+          </div>
+        </div>
+
+        <!-- Imagem 3: Montanhas -->
+        <div
+          class="relative rounded-lg shadow-lg w-full h-[300px] overflow-hidden"
           [ngClass]="{ 'animate-fade-in': activeSlide === 7 }"
-          alt="Tour Guide"
-        />
+        >
+          <img
+            src="assets/images/monts.jpg"
+            alt="Mountain tourism Liberia"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2 text-sm sm:text-base font-medium"
+          >
+            🏞️ Eco-tourism and hikes through Liberia’s scenic landscapes
+          </div>
+        </div>
       </div>
     </div>
   </section>
