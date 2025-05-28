@@ -163,40 +163,64 @@
     </div>
   </section>
 
-  <!-- Slide 4: Melhor época -->
+  <!-- Slide 4: Melhor época para visitar -->
   <section
     class="h-screen snap-start bg-white px-6 text-center flex items-center justify-center"
   >
     <div
-      class="max-w-4xl w-full"
+      class="max-w-5xl w-full flex flex-col items-center text-center"
       [ngClass]="{ 'animate-zoom-in': activeSlide === 3 }"
     >
       <h2
-        class="text-3xl sm:text-4xl font-semibold text-blue-800 mb-4"
+        class="text-4xl sm:text-5xl font-semibold text-blue-800 mb-6"
         [ngClass]="{ 'animate-fade-in': activeSlide === 3 }"
       >
         Best Time to Visit
       </h2>
+
       <p
-        class="text-lg sm:text-xl text-gray-700 mb-6"
+        class="text-xl sm:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto text-center"
         [ngClass]="{ 'animate-fade-up': activeSlide === 3 }"
       >
         December to March offers sunny days and excellent weather for beaches,
         hiking, and festivals.
       </p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
-        <img
-          src="assets/images/travel.jpg"
-          class="rounded-lg shadow-lg w-full"
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+        <!-- Imagem 1: Festival -->
+        <div
+          class="relative rounded-lg shadow-lg w-full h-[300px] overflow-hidden"
           [ngClass]="{ 'animate-flip-in': activeSlide === 3 }"
-          alt="Beach Season"
-        />
-        <img
-          src="assets/images/travel.jpg"
-          class="rounded-lg shadow-lg w-full"
+        >
+          <img
+            src="assets/images/festival.jpg"
+            class="w-full h-full object-cover"
+            alt="Liberia Festival"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2 text-sm sm:text-base font-medium"
+          >
+            🎉 Cultural festivals and street celebrations light up the dry
+            season
+          </div>
+        </div>
+
+        <!-- Imagem 2: Robertsport -->
+        <div
+          class="relative rounded-lg shadow-lg w-full h-[300px] overflow-hidden"
           [ngClass]="{ 'animate-slide-in-left': activeSlide === 3 }"
-          alt="Festival"
-        />
+        >
+          <img
+            src="assets/images/lazer.jpg"
+            class="w-full h-full object-cover"
+            alt="Robertsport Beach"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2 text-sm sm:text-base font-medium"
+          >
+            🏖️ Sunny days in Robertsport — ideal for beach lovers and surfers
+          </div>
+        </div>
       </div>
     </div>
   </section>
